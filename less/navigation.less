@@ -1,1 +1,43 @@
 // Navigation Styles here
+.header{
+
+width: 100%;
+border-bottom: 2px dashed @navigation-border;
+background: @white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+    .funbus{
+        font-size: 5rem;
+        padding: 5%;
+    }
+
+    .navigation{
+        width: 50%;
+        padding-right: 10%;
+        display:flex;
+        justify-content: space-between;
+        font-size: 1.5rem;        
+
+        a{
+            text-decoration: none;
+            color: @font-color;
+        }
+    }
+
+    @media @mobile{
+        display: flex;
+        flex-direction: column;
+
+
+        .navigation{
+            width: 100%;
+            padding: 0% 5% 0% 5%;
+            display:flex;
+            justify-content: space-between;
+            font-size: 1.5rem;        
+        }
+
+    }
+}
